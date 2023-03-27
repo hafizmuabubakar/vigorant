@@ -1,0 +1,24 @@
+{
+  "name": "vigorant_assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "migrate": "knex migrate:latest",
+    "makemigrate": "knex --knexfile=./database/knexfile.js migrate:make",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hafiz_abubakar",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/msal-browser": "^2.34.0",
+    "@azure/msal-node": "^1.16.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "objection": "^3.0.1",
+    "pg": "^8.10.0"
+  }
+}
